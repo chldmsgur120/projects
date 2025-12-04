@@ -6,13 +6,13 @@ A/B 검사 데이터를 분리 모델링하여 교통사고 위험군(0/1)을 �
 
 ## 주요 컬럼
 
-컬럼명         설명
-Test_id	      검사 식별 ID
-Test	        검사 종류 (A: 신규자격 / B: 자격유지)
-PrimaryKey	  운수종사자 식별 ID
-Age	          나이 구간 (ex. 30a = 30 ~ 34, 30b = 35 ~ 39)
-TestDate	    검사 년월(yyyymm)
-Label	        사고 위험군 여부 (0/1)
+- 컬럼명         설명
+- Test_id	      검사 식별 ID
+- Test	        검사 종류 (A: 신규자격 / B: 자격유지)
+- PrimaryKey	  운수종사자 식별 ID
+- Age	          나이 구간 (ex. 30a = 30 ~ 34, 30b = 35 ~ 39)
+- TestDate	    검사 년월(yyyymm)
+- Label	        사고 위험군 여부 (0/1)
 
 ## 프로젝트 전체 프로세스
 
