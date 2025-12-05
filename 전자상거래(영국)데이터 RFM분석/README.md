@@ -183,5 +183,14 @@ Power BI를 통해 시각화하여 라벨링
 - Power BI 시각화를 활용해 CRM·마케팅 전략 인사이트 도출  
 
 ---
+## 📊 Power BI Dashboard Preview
+
+
+![클러스터 선택o](파워BI 선택o.png)
+
+
+![클러스터 선택x](파워BI 선택x.png)
+
+
 
 
