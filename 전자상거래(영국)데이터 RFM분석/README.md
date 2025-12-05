@@ -186,10 +186,8 @@ Power BI를 통해 시각화하여 라벨링
 ## 📊 Power BI Dashboard Preview
 
 
-![클러스터 선택o](images/파워BI 선택o.png)
-
-
-![클러스터 선택x](images/파워BI 선택x.png)
+![클러스터 선택o](images/cluster_select_o.png)
+![클러스터 선택x](images/cluster_select_x.png)
 
 
 
