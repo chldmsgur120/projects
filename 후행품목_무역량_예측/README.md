@@ -142,21 +142,22 @@ CCF 탐색, 모델 학습, 8월 예측까지 **모두 value 하나로만 진행�
 ---
 
 **평가지표**
-•	평가 산식 : Score = 0.6 × F1 + 0.4 × (1 − NMAE) [코드]
+•	평가 산식 : Score = 0.6 × F1 + 0.4 × (1 − NMAE)
 1) F1 = (2 × Precision × Recall) ÷ (Precision + Recall)
-•	Precision = TP ÷ (TP + FP)
-•	Recall = TP ÷ (TP + FN)
-여기서
-•	TP(True Positive): 정답과 예측 모두에 포함된 공행성쌍
-•	FP(False Positive): 예측에는 있으나 정답에는 없는 쌍
-•	FN(False Negative): 정답에는 있으나 예측에 없는 쌍
+- Precision = TP ÷ (TP + FP)
+- Recall = TP ÷ (TP + FN)
 
-2) NMAE = (1 / |U|) × Σ[min(1, |y_true - y_pred| ÷ (|y_true| + ε))]
-•	U = 정답 쌍(G)과 예측 쌍(P)의 합집합
-•	y_true: 정답의 다음달 무역량 (정수 변환)
-•	y_pred: 예측 무역량 (정수 반올림)
-•	FN 또는 FP에 해당하는 경우 오차 1.0(100%, 최하점)로 처리
-•	오차가 100%를 초과하는 경우에도 1.0(100%, 최하점)로 처리
+여기서
+- TP(True Positive): 정답과 예측 모두에 포함된 공행성쌍
+- FP(False Positive): 예측에는 있으나 정답에는 없는 쌍
+- FN(False Negative): 정답에는 있으나 예측에 없는 쌍
+
+3) NMAE = (1 / |U|) × Σ[min(1, |y_true - y_pred| ÷ (|y_true| + ε))]
+- U = 정답 쌍(G)과 예측 쌍(P)의 합집합
+- y_true: 정답의 다음달 무역량 (정수 변환)
+- y_pred: 예측 무역량 (정수 반올림)
+- FN 또는 FP에 해당하는 경우 오차 1.0(100%, 최하점)로 처리
+- 오차가 100%를 초과하는 경우에도 1.0(100%, 최하점)로 처리
 
 ---
 
