@@ -4,6 +4,33 @@
 그 결과를 활용하여 후행 품목의 **2025년 8월 무역량(value)** 을 예측하는 머신러닝 프로젝트
 
 ---
+## 📑 목차
+1. [프로젝트 개요](#1-프로젝트-개요)
+2. [데이터 구조](#2-데이터-구조)
+   - [Train 데이터](#21-train-데이터-traincsv)
+   - [Submission 데이터](#22-submission-데이터-sample_submissioncsv)
+3. [데이터 전처리](#3-데이터-전처리)
+   - [날짜 정규화](#31-날짜-정규화)
+   - [Monthly DataFrame 구성](#32-monthly-dataframe-구성)
+4. [공행성(CCF) 기반 선행–후행 구조 추출](#4-공행성ccf-기반-선행후행-구조-추출)
+   - [모든 품목 조합에 대한 CCF 계산](#41-모든-품목-조합ij에-대해-수행)
+   - [relations_df 구성](#42-relations_df-구성)
+5. [Feature Engineering (value 기반)](#5-feature-engineering-value-기반)
+   - [Follower 기준 학습 데이터 구성](#51-follower-기준-학습-데이터-구성)
+   - [예측 시점 Feature 구성](#52-예측-시점-feature)
+6. [모델링 (value 기반 RandomForest)](#6-모델링-value-기반-randomforest)
+   - [알고리즘](#61-알고리즘)
+   - [학습 방식](#62-학습-방식)
+   - [예측](#63-예측)
+7. [제출 파일 생성](#7-제출-파일-생성)
+   - [sample_submission 병합](#71-sample_submission-병합)
+   - [relations_df 기반 필터링](#72-relations_df-기반-필터링)
+   - [최종 결과](#73-최종-결과)
+8. [평가지표](#평가지표)
+9. [후행품목 무역량 예측 결과 해석 & 인사이트](#후행품목-무역량-예측-결과-해석--인사이트)
+10. [한계점 및 개선 방향](#한계점-및-개선-방향)
+
+---
 
 ## 1. 프로젝트 개요
 
