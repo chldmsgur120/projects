@@ -5,6 +5,24 @@
 이를 바탕으로 **고객 세그먼트(클러스터)를 도출**한 프로젝트입니다.
 
 ---
+## 📑 목차
+1. [프로젝트 개요](#1-프로젝트-개요)
+2. [RFM 지표 정의](#2-rfm-지표-정의)
+3. [RFM 테이블 생성](#3-rfm-테이블-생성)
+4. [RFM 등급화 (Scoring)](#4-rfm-등급화-scoring)
+   - [Recency 등급 (R_Score)](#4-1-recency-등급-r_score)
+   - [Frequency 등급 (F_Score)](#4-2-frequency-등급-f_score)
+   - [Monetary 등급 (M_Score)](#4-3-monetary-등급-m_score)
+5. [K-Means 군집화 (Clustering)](#6-k-means-군집화-clustering)
+   - [분석에 사용된 변수](#6-1-분석에-사용된-변수)
+   - [표준화(Standardization)](#6-2-표준화standardization)
+   - [최적 클러스터 수 결정 (Elbow Method)](#6-3-최적-클러스터-수-결정-elbow-method)
+   - [K-Means 모델 적용](#6-4-k-means-모델-적용)
+6. [고객 클러스터 해석 (Cluster Interpretation)](#7-고객-클러스터-해석-cluster-interpretation)
+7. [Power BI Dashboard Preview](#-power-bi-dashboard-preview)
+8. [전자상거래 데이터 RFM 분석의 한계점 및 개선 방향](#전자상거래-데이터-rfm-분석의-한계점-및-개선-방향)
+
+---
 
 ## 1. 프로젝트 개요
 
